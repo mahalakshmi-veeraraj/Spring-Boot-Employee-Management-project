@@ -8,4 +8,4 @@ The following configurations are implemented into this project to make the appli
 
 3. Built as a JAR to ease the deployment process.
 
-"Employee Management Project Results.docx" document contains captured screenshots of the REST API tests through Postman, JUnit Test results, and JUnit Coverage results.
+"Employee Management Project Results.docx" document under this repository contains captured screenshots of the REST API tests through Postman, JUnit Test results, and JUnit Coverage results.

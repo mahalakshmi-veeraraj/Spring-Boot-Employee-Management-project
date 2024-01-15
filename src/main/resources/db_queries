@@ -1,0 +1,23 @@
+`CREATE DATABASE ems;
+USE ems;
+SHOW TABLES;
+CREATE TABLE admin (
+	name VARCHAR(25) PRIMARY KEY,
+    password VARCHAR(25)
+);
+CREATE TABLE employee (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(25),
+    gender VARCHAR(10),
+    phone VARCHAR(13),
+    email VARCHAR(25),
+    designation VARCHAR(20),
+    salary DECIMAL(10,2)
+);
+
+INSERT INTO employee
+VALUES 
+(1, 'test1', 'Female', '1111111111', 'test1@gmail.com', 'Developer', 25000.00),
+(2, 'test2', 'Male', '2111111111', 'test2@gmail.com', 'Tester', 15000.00),
+(3, 'test3', 'Female', '3111111111', 'test3@gmail.com', 'Project Manager', 125000.00),
+(4, 'test4', 'Male', '4111111111', 'test4@gmail.com', 'Technical Lead', 100000.00);

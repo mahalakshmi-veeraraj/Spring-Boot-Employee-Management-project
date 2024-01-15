@@ -2,7 +2,7 @@
 
 Configured Spring Profiles for managing the application configuration across different environments.
 
-Configured Spring Actuator for monitoring the application in production.
+Configured Spring Boot Actuator for monitoring the application in production.
 
 Built as a JAR to ease the deployment process.
 

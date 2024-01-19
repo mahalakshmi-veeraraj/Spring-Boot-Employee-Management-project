@@ -1,5 +1,12 @@
 **Spring-Boot-Employee-Management-project**
 
+
+All the Spring Beans defined inside this project are Singleton in order to use the server memory efficiently, and the designed classes are stateless in nature, so there will not be an issue creating all of them as Singleton. 
+
+If, in the future, the need arises to design stateful beans, then we will need to define the bean scope as one of the following:
+1. request
+2. session.
+
 The following configurations are implemented into this project to make the application production ready:
 
 1. Configured Spring Profiles for managing the application configuration across different environments.

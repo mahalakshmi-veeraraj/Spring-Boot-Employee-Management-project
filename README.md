@@ -7,7 +7,7 @@ If, in the future, the need arises to design stateful beans, then will need to d
 1. request bean scope.
 2. session bean scope.
 
-Prototype scope is not recommended here because the application will produce new objects every time the request for access is made, and that will lead to memory leak errors in the future.
+Prototype scope is not recommended here because the application will produce new objects every time the request for access is made, and that will lead to memory leaks on server issues in the future.
 
 The following configurations are implemented into this project to make the application production ready:
 

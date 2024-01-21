@@ -3,11 +3,11 @@
 
 All the Spring Beans defined inside this project are Singleton in order to use the server memory efficiently, and the designed classes are stateless in nature, so there will not be an issue creating all of them as Singleton. 
 
-If, in the future, the need arises to design stateful beans, then we will need to define the bean scope as one of the following:
+If, in the future, the need arises to design stateful beans, then will need to define the bean scope as one of the following:
 1. request bean scope.
 2. session bean scope.
 
-Prototype scope is not recommended here because the application will produce new objects every time the request for access is made, and that will create a memory leak error.
+Prototype scope is not recommended here because the application will produce new objects every time the request for access is made, and that will lead to memory leak errors in the future.
 
 The following configurations are implemented into this project to make the application production ready:
 

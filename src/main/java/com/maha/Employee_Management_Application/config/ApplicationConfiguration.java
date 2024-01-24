@@ -1,10 +1,21 @@
 package com.maha.Employee_Management_Application.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
+//@Component
+/*
+ * As of Spring Boot 2.2, Spring finds and registers @ConfigurationProperties
+ * classes via classpath scanning. Scanning of @ConfigurationProperties needs to
+ * be explicitly opted into by adding the @ConfigurationPropertiesScan
+ * annotation. Therefore we don’t have to annotate such classes with @Component
+ * or @Configuration. The classpath scanner enabled by @SpringBootApplication
+ * finds the ConfigProperties class even though we did not annotated this class
+ * with @Component.
+ * 
+ * @ConfigurationProperties – binding the external properties file values with
+ * the java classes.
+ */
 @ConfigurationProperties(prefix = "notify.email")
-@Component
 public class ApplicationConfiguration {
 	private String from;
 	private String to;
